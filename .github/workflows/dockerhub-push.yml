@@ -35,6 +35,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           push: true
           tags: j0n4n/nuclei:latest,j0n4n/nuclei:${{ steps.meta.outputs.TAG }}
